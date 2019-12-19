@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charsSt="UTF-8">
+    <title>Upwork Jobs</title>
+</head>
+<body>
+<h1>Jobs Candidates</h1>
+<ol>
+    {% for job in jobs %}
+    <li>{{ job.job_url }}</li>
+    {% endfor %}
+</ol>
+</body>
+</html>

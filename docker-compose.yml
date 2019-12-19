@@ -1,0 +1,14 @@
+version: "3.5"
+
+services:
+  flaskapp:
+    build: .
+    volumes:
+      - .:/flaskapp
+    ports:
+      - "9000:9000"
+    command: ./entrypoint.sh
+
+networks:
+  default:
+    name: bootcampxiv
